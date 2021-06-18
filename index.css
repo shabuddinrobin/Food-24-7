@@ -1,0 +1,541 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+
+    background: radial-gradient(#3783ae54, transparent);
+}
+.btn{
+    margin-top: 50px;
+    box-shadow: 0px 2px 10px 0px;
+    border-radius: 12px;
+    background-color: rgb(66, 233, 44);
+    height: 50px;
+    width: 200px;
+    font-size: 27px;
+    font-family: 'Source Serif Pro', serif;
+    display: block;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(241, 22, 22);
+    height: 50px;
+    color: rgb(250, 250, 246);
+    transition: .6s;
+}
+.navbar-1{
+    border-radius: 30px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    background-color: rgb(219, 190, 253);
+    font-size: 17px;
+}
+.navbar-1 a{
+    text-decoration: none;
+}
+.logo-contant{
+    display: flex;
+    width: 100%;
+}
+.logo-1{
+    width: 50px;
+    margin-left: 120px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+.nav-h1 {
+    color: rgb(226, 43, 67);
+    font-size: 70px;
+    font-family: 'Merriweather', serif;
+    filter: drop-shadow(9px 4px 6px #000);
+    animation: nav-h1 3s;
+    position: relative;
+}
+@keyframes nav-h1{
+    0%{
+        opacity: 0%;
+    }
+}
+.navbar-1 p{
+
+    position: absolute;
+    color: rgb(0, 0, 0);
+    margin-top: 70px;
+
+
+    /* animation: navbar-1-p 3s 3s both; */
+}
+@keyframes navbar-1-p{
+    0%{
+        opacity: 0%;
+        transform: translateY(-100px);
+    }
+}
+.ul-1{
+    margin-top: 20px;
+    padding: 5px 0px 12px 0px;
+    display: flex;
+    list-style: none;
+}
+.ul-1 a{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(0, 160, 160);
+    text-decoration: none;
+}
+.ul-1 a:hover{
+    color: rgb(238, 1, 33);
+    filter: drop-shadow(7px 7px 17px);
+
+    transition: .5s;
+}
+/* ----------------------Home----------------- */
+.container-1{
+    width: 80%;
+    margin-top: 90px;
+}
+.home .row{
+    width: 100%;
+    display: flex;
+}
+.home .col-6l{
+    animation: home-left 1s;
+}
+@keyframes home-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+.col-6l{
+    width: 65%;
+    float: left;
+}
+.home h2{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: flex-start;
+    color: darkorange;
+}
+.home p{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(33, 65, 170);
+}
+.col-6r{
+    width: 50%;
+    float: right;
+}
+.home img{
+    display:flex;
+    width: 94%;
+    filter: drop-shadow(7px 7px 11px #000);
+    animation: home-right-img 1s;
+}
+@keyframes home-right-img{
+    0%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+.container-1 h5{
+    font-weight: normal;
+    margin-top: 8%;
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+    text-align: justify;
+}
+.home .col-6l a{
+    text-decoration: none;
+    justify-content: flex-start;
+}
+.home .btn {
+        margin:auto;
+        margin-top: 60px;
+        animation: home-btn 1.5s 1s both;
+}
+@keyframes home-btn{
+    0%{
+        opacity: 0%;
+        transform: translateY(40px);
+   }
+   100%{
+       opacity: 100%;
+   }
+}
+.col-6l .btn:hover{
+    box-shadow: 0px 2px 10px 0px;
+}
+/* --------------------About------------------- */
+
+
+.about{
+    margin-top: 100px;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+.about .row{
+    width: 100%;
+    display: flex;
+}
+.about img{
+    margin-top: 100px;
+    width: 90%;
+    border-radius: 25px;
+    animation: about-right-img 1s;
+}
+@keyframes about-right-img{
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+.about button{
+    margin:60px auto;
+    background-color: rgb(66, 197, 199);
+    animation: about-btn 1.5s 1s both;
+}
+@keyframes about-btn{
+    0%{
+        opacity: 0%;
+        transform: translateY(40px);
+   }
+   100%{
+       opacity: 100%;
+   }
+}
+.about .col-6r{
+
+    animation: about-right 1s;
+}
+@keyframes about-right{
+    0%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+.about h3{
+    color:rgb(233, 0, 0);
+    margin-bottom: 20px;
+}
+.about h2{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: flex-start;
+    color: darkorange;
+    margin-bottom: 30px;
+}
+.about p{
+    text-align: justify;
+    margin-top: 8%;
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+}
+.service h2{
+    
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    color: darkorange;
+    margin-bottom: 30px;
+}
+.service h4{
+    text-align: justify;
+    font-family: 'Courgette', cursive;
+    font-weight: normal;
+}
+.service .row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.service h3{
+    text-align: center;
+    font-size: 22px;
+}
+.service .cart-1{
+    width: 27%;
+    min-height: 300px;
+    margin: 30px 20px;
+    padding: 15px 10px;
+    border-radius: 16px;
+    background: radial-gradient(#1f1dffc4, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-1 1.3s .4s both;
+}
+@keyframes cart-1{
+    0%{
+        opacity: 0%;
+        transform: translateX(-800px);
+    }
+}
+.service .cart-2{
+    width: 27%;
+    margin: 30px 20px;
+    padding: 15px 10px;
+    border-radius: 16px;
+    background: radial-gradient(#ffd720, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-2 1.3s .2s both;
+}
+@keyframes cart-2{
+    0%{
+        opacity: 0%;
+        transform: translateX(-800px);
+    }
+}
+.service .cart-3{
+    width: 27%;
+    margin: 30px 20px;
+    padding: 15px 10px;
+    border-radius: 16px;
+    background: radial-gradient(#ff3030e3, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-3 1.3s ;
+}
+@keyframes cart-3{
+    0%{
+        opacity: 0%;
+        transform: translateX(-800px);
+    }
+}
+.service a{
+    font-size: 60px;
+    color: maroon;
+}
+/* ------------------------------- Menu----------------------------- */
+.menu .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.menu h2{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    color: darkorange;
+    margin-bottom: 30px;
+}
+.menu h4{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+.menu h3{
+    color: rgb(225, 247, 34);
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Courgette', cursive;
+    font-style: normal;
+}
+.menu img{
+    width: 220px;
+    border-radius: 50%;
+}
+.menu p{
+    text-align: justify;
+    font-family: 'Courgette', cursive;
+    font-weight: normal;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+.menu .fa-cart-arrow-down{
+    font-size: 35px;
+    color: #d90000;
+    margin-left: 160px;
+}
+.menu .cart-21 h4{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    color: #07017d;
+    margin-top: 15px;
+}
+.menu .cart-21{
+    width: 230px;
+    height: 400px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-21 1.5s .5s both;
+}
+@keyframes cart-21{
+    0%{
+        opacity: 0%;
+        transform: translateX(-800px);
+    }
+}
+.menu .cart-22{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-22 2s .5s both;
+}
+@keyframes cart-22{
+    0%{
+        opacity: 0%;
+    }
+}
+.menu .cart-23{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-23 2s .5s both;
+}
+@keyframes cart-23{
+    0%{
+        opacity: 0%;
+    }
+}
+.menu .cart-24{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-24 1.5s .5s both;
+}
+@keyframes cart-24{
+    0%{
+        opacity: 0%;
+        transform: translateX(800px);
+    }
+}
+.menu .cart-25{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-25 1.5s .5s both;
+}
+@keyframes cart-25{
+    0%{
+        opacity: 0%;
+        transform: translateX(-800px);
+    }
+}
+.menu .cart-26{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-26 2s .5s both;
+}
+@keyframes cart-26{
+    0%{
+        opacity: 0%;
+    }
+}
+.menu .cart-27{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-27 2s .5s both;
+}
+@keyframes cart-27{
+    0%{
+        opacity: 0%;
+    }
+}
+.menu .cart-28{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-28 1.5s .5s both;
+}
+@keyframes cart-28{
+    0%{
+        opacity: 0%;
+        transform: translateX(800px);
+    }
+}
+.menu .cart-29{
+    width: 230px;
+    height: 420px;
+    margin: 50px 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: radial-gradient(#7b7645, transparent);
+    display: grid;
+    text-align: center;
+    animation: cart-29 2s .5s both;
+}
+@keyframes cart-29{
+    0%{
+        opacity: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
