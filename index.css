@@ -46,6 +46,7 @@ header .ongoing{
     font-size: 20px;
     text-align: center;
     animation: ongoing 25s ease-in-out infinite running;
+    background-repeat: no-repeat;
 }
 @keyframes ongoing{
     0%{
@@ -617,9 +618,9 @@ footer{
     background-color: rgb(181, 209, 193);
     justify-content: space-between;
     border-radius: 25px;
-    animation: footer 4s 1s both;
+    animation: footers 4s 1s both;
 }
-@keyframes footer{
+@keyframes footers{
     0%{
         opacity: 0%;
         transform: translateY(140px);
@@ -629,8 +630,6 @@ footer{
         transform: 0;
     }
 }
-
-
 footer li{
     list-style-type: none;
     font-size: 13px;
@@ -654,10 +653,167 @@ footer .copyright{
     color: #d90000;
     font-size: 12px;
 }
+/* ------------------------------------------------------- */
+@media (min-width: 610px) and (max-width: 700px) {
+    .navbar-1 {
+        width: 100%;
+        height: 139px;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-h1 {
+        font-size: 65px;
+    }
+    h2 {
+        display: block;
+        font-size: 1em;
+    }
+    .col-6l {
+        width: 106%;
+    }
+    .home h2 {
+        justify-content: center; 
+    }
+    .home p{
+        text-align: center;
+    }
+    .home img {
+        width: 75%;
+        margin-left: 62px;
+    }
+    .about img {
+        width: 95%;
+    }
+    .col-6r {
+        width: 100%;
+    }
+    .about h2 {
+        text-align: center;
+    }
+    .service h2{
+        text-align: center;
+    }
+    .service .cart-1 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .service .cart-2 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .service .cart-3 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .menu .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu h2{
+        text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+    footer p {
+        display: block;
+        text-align: center;
+    }
+    footer li{
+        text-align: center;
+    }
+}
 
 
 
+@media (min-width: 300px) and (max-width: 610px) {
 
-
-
-
+    .navbar-1 {
+        width: 100%;
+        height: 115px;
+    }
+    li {
+        display: contents;
+        text-align: -webkit-match-parent;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-1 a .logo-1 {
+        margin-left: 3px;
+    }
+    .nav-h1 {
+        font-size: 45px;
+    }
+    h2 {
+        display: block;
+        font-size: 1em;
+    }
+    .col-6l {
+        width: 100%;
+    }
+    .home h2 {
+        text-align: center;
+    }
+    .home p{
+        text-align: center;
+    }
+    .home img {
+        width: 75%;
+        margin-left: 32px;
+    }
+    .about img {
+        width: 95%;
+    }
+    .col-6r {
+        width: 100%;
+    }
+    .about h2 {
+        text-align: center;
+    }
+    .service h2{
+        text-align: center;
+    }
+    .service .cart-1 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .service .cart-2 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .service .cart-3 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .menu .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu h2{
+        text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+    footer p {
+        display: block;
+        text-align: center;
+    }
+    footer li{
+        text-align: center;
+    }
+}
