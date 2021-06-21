@@ -753,7 +753,7 @@ footer .copyright{
 
 
 
-@media (min-width: 300px) and (max-width: 610px) {
+@media (min-width: 400px) and (max-width: 610px) {
 
     .navbar-1 {
         width: 100%;
@@ -825,6 +825,114 @@ footer .copyright{
     }
     .menu h2{
         text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+    footer p {
+        display: block;
+        text-align: center;
+    }
+    footer li{
+        text-align: center;
+    }
+}
+@media (min-width: 150px) and (max-width: 400px) {
+    .navbar-1 {
+        width: 100%;
+        height: 115px;
+    }
+    li {
+        display: contents;
+        text-align: -webkit-match-parent;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-1 a .logo-1 {
+        margin-left: 1px;
+        width: 30px;
+    }
+    .nav-h1 {
+        font-size: 35px;
+    }
+    .ul-1 {
+        margin-top: 5px;
+        padding: 5px 0px 12px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-direction: row;
+    }
+    .navbar-1 sub p {
+        margin-top: -6px;
+        text-align: end;
+        font-size: 13px;
+        margin-right: -70px;
+    }
+    header .ongoing {
+        font-size: 13px;
+        text-align: center;
+        animation: ongoing 25s ease-in-out infinite running;
+        background-repeat: no-repeat;
+    }
+    h2 {
+        display: block;
+        font-size: 13px;
+    }
+    .col-6l {
+        width: 100%;
+    }
+    .home h2 {
+        font-size: 26px;
+        justify-content: center;
+    }
+    .home p{
+        text-align: center;
+    }
+    .home img {
+        width: 75%;
+        margin-left: 32px;
+    }
+    .about img {
+        width: 95%;
+    }
+    .col-6r {
+        width: 100%;
+    }
+    .about h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .service h2{
+        text-align: center;
+        font-size: 26px;
+    }
+    .service .cart-1 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .service .cart-2 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .service .cart-3 {
+        width: 53%;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .menu .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu h2{
+        text-align: center;
+        font-size: 26px;
     }
     footer {
         height: auto;
