@@ -12,15 +12,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 <!-- ---------------BootStrap----------------- -->
 
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-
-<!-- ------------------------------------------------ -->
 
 
-<!-- ---------------------Style & CSS------------------------>
+
+<!-- ----------------Style CSS-------------->
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body onload=showClock()>
+
     <header>
                 <div class="navbar-1">
                     <div class="logo-contant">
@@ -30,21 +29,21 @@
                         <sub><p>Since 1994</p></sub>
                     </a>
                     <div class="clock"> 
-                        <h2>Time: 14: 05: 32 </h2>
+                        <h2 id="watch"> CLOCK</h2>
                     </div>
                     </div>
                     <ul class="ul-1">
                         <a href="#"><li  class="li-1"> Home </li></a> 
-                        <a href="#home"><li  class="li-1"> Tasty </li></a> 
                         <a href="#about"><li  class="li-1"> About </li></a> 
                         <a href="#service"><li  class="li-1"> Service </li></a> 
                         <a href="#menu"><li  class="li-1"> Menu </li></a> 
                         <a href="#footer"><li  class="li-1"> Contact</li></a> 
-                        <a href="#"><li  class="li-1"> Theme </li></a> 
+                        <a href="login_page.html"><li  class="li-1"> Login </li></a> 
                     </ul>
                 </div>
                 <div class="ongoing">The project is not finished yet & I,m working on it!!!!!!!! </div>
     </header>
+
     <!-- --------------------------------------- -->
         <div class="container-1">
             <div class="home" id="home">
@@ -109,6 +108,7 @@
             </div>
         </div>
 <!-- --------------------Menu of the week----------------- -->
+
 <div class="container-1">
     <div class="menu" id="menu">
         <h2> Menu of the week</h2>
