@@ -27,6 +27,12 @@ body{
     color: rgb(250, 250, 246);
     transition: .6s;
 }
+#watch {
+    width: 235px;
+    font-size: 28px;
+    font-family: 'digital-clock-font';
+    color: #c43030;
+}
 .navbar-1{ 
     border-radius: 30px;
     padding-top: 5x;
@@ -82,10 +88,10 @@ header .ongoing{
 }
 .nav-h1 {
     color: rgb(226, 43, 67);
-    font-size: 70px;
+    font-size: 65px;
     font-family: 'Merriweather', serif;
     filter: drop-shadow(9px 4px 6px #000);
-    animation: nav-h1 3s;
+    animation: nav-h1 1s;
 }
 @keyframes nav-h1{
     0%{
@@ -94,11 +100,10 @@ header .ongoing{
 }
 .navbar-1 sub p{
     color: rgb(0 102 7);
-    margin-top: -6px;
+    margin-top: 0px;
     text-align: end;
     font-size: 19px;
-    margin-right: -70px;
-
+    margin-right: 0px;
     animation: navbar-1-sub 3s 3s both;
 }
 @keyframes navbar-1-sub{
@@ -293,6 +298,7 @@ header .ongoing{
 /* -----------------Service------------------ */
 .container-1 .service{
     margin-top: 80px;
+    width: 100%;
 }
 .service h2{
     font-size: 50px;
@@ -413,12 +419,12 @@ header .ongoing{
     color: black;
     font-style: italic;
 }
-.menu .fa-cart-arrow-down{
+.menu .fa-cart-arrow-down:before {
+    content: "\f218";
     font-size: 35px;
     color: #d90000;
-    margin-left: 160px;
 }
-.menu .fa-cart-arrow-down:hover{
+ .menu .fa-cart-arrow-down:hover{
     color: #ff0404;
 }
 .menu h4{
@@ -677,40 +683,44 @@ footer .copyright{
         transform: translateX(-70%);
     }
 }
+
+
+
 /* ------------------------------------------------------- */
-@media (min-width: 610px) and (max-width: 700px){
+
+@media (min-width: 600px) and (max-width: 800px){
     .navbar-1{ 
-        border-radius: 30px;
-        padding-top: 5x;
-        width: 100%;
         height: 139px;
-        background-color: rgb(219, 190, 253);
-        font-size: 17px;
+    }
+    #watch {
+        width: 158px;
+        font-size: 18px;
     }
     .row {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .nav-h1 {
-        font-size: 65px;
+    .navbar-1 h1 {
+        font-size: 50px;
     }
-    h2 {
+    .navbar-1 h2 {
         display: block;
         font-size: 1em;
     }
     .col-6l {
-        width: 106%;
+        width: 100%;
     }
     .home h2 {
         justify-content: center; 
     }
     .home p{
-        text-align: center;
-    }
+        justify-content: center; 
+        font-size: 25px;   
+        }
     .home img {
         width: 75%;
-        margin-left: 62px;
+        justify-content: center; 
     }
     .about img {
         width: 95%;
@@ -724,28 +734,66 @@ footer .copyright{
     .service h2{
         text-align: center;
     }
+    .service h3{
+        margin: 40px auto;
+    }
     .service .cart-1 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
         margin: 20px auto;
     }
     .service .cart-2 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
         margin: 20px auto;
     }
     .service .cart-3 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
         margin: 20px auto;
     }
     .menu .row {
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
     .menu h2{
         text-align: center;
+    }
+    .menu .cart-21{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-22{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-23{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-24{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-25{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-26{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-27{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-28{
+        width: 80%;
+        height: 380px;
+    }
+    .menu .cart-29{
+        width: 80%;
+        height: 380px;
+    }
+    .fa-cart-arrow-down:before {
+        content: "\f218";
+        margin-left: 90px;
     }
     footer {
         height: auto;
@@ -759,19 +807,21 @@ footer .copyright{
     }
 }
 
+/* ---------------------------------------- */
 
-
-@media (min-width: 400px) and (max-width: 610px) {
+@media (min-width: 400px) and (max-width: 599px) {
     .ongoing{
         display: none;
     }
     .navbar-1{ 
-        border-radius: 30px;
-        padding-top: 5x;
-        width: 100%;
         height: 115px;
         background-color: rgb(219, 190, 253);
         font-size: 17px;
+    }
+    #watch {
+        width: 127px;
+        height: 65px;
+        font-size: 15px;
     }
     .row {
         width: 100%;
@@ -781,6 +831,10 @@ footer .copyright{
     .navbar-1 a .logo-1 {
         margin-left: 3px;
     }
+    .navbar-1 sub p {
+        text-align: center;
+        font-size: 13px;
+    }
     .nav-h1 {
         font-size: 45px;
     }
@@ -789,39 +843,46 @@ footer .copyright{
         font-size: 1em;
     }
     .col-6l {
-        width: 100%;
+        width: 99%;
     }
     .home h2 {
-        justify-content: center;    
+        justify-content: center; 
+        font-size: 32px;   
     }
     .home p{
         text-align: center;
+        font-size: 25px;   
         }
     .about img {
-        width: 95%;
+        width: 100%;
     }
     .col-6r {
-        width: 100%;
+        width: 99%;
     }
     .about h2 {
         text-align: center;
+        font-size: 32px;
     }
     .service h2{
         text-align: center;
+        font-size: 32px;
+    }
+    .service h3{
+        margin: 40px auto;
     }
     .service .cart-1 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
+        height: auto;
         margin: 20px auto;
     }
     .service .cart-2 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
+        height: auto;
         margin: 20px auto;
     }
     .service .cart-3 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
+        height: auto;
         margin: 20px auto;
     }
     .menu .row {
@@ -831,6 +892,47 @@ footer .copyright{
     }
     .menu h2{
         text-align: center;
+        font-size: 32px;
+    }
+    .menu .cart-21 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-22 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-23 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-24 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-25 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-26 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-27 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-28 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-29 {
+        width: 90%;
+        height: auto;
+    }
+    .fa-cart-arrow-down:before {
+        content: "\f218";
+        margin-left: 90px;
     }
     footer {
         height: auto;
@@ -843,8 +945,6 @@ footer .copyright{
         text-align: center;
     }
     footer .copyright {
-        text-align: center;
-        color: #d90000;
         font-size: 11px;
         animation: none;
     }
@@ -857,13 +957,7 @@ footer .copyright{
 
     .navbar-1{ 
         overflow-x: hidden;
-        border-radius: 30px;
-        padding-top: 5x;
-        width: 100%;
         height: auto;
-        background-color: rgb(219, 190, 253);
-        background-size: contain;
-        background-repeat: no-repeat;
         font-size: 17px;
     }
     li {
@@ -878,6 +972,10 @@ footer .copyright{
     .navbar-1 a .logo-1 {
         margin-left: 1px;
         width: 30px;
+    }
+    #watch {
+        width: 112px;
+        font-size: 13px;
     }
     .nav-h1 {
         font-size: 35px;
@@ -934,19 +1032,22 @@ footer .copyright{
         text-align: center;
         font-size: 26px;
     }
+    .service h3{
+        margin: 20px auto;
+    }
     .service .cart-1 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
+        height: auto;
         margin: 20px auto;
     }
     .service .cart-2 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
+        height: auto;
         margin: 20px auto;
     }
     .service .cart-3 {
-        width: 53%;
-        height: 400px;
+        width: 70%;
+        height: auto;
         margin: 20px auto;
     }
     .menu .row {
@@ -957,6 +1058,45 @@ footer .copyright{
     .menu h2{
         text-align: center;
         font-size: 26px;
+    }
+    .menu .cart-21 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-22 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-23 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-24 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-25 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-26 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-27 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-28 {
+        width: 90%;
+        height: auto;
+    }
+    .menu .cart-29 {
+        width: 90%;
+        height: auto;
+    }
+    .fa-cart-arrow-down {
+        margin-right: -35px;
     }
     footer {
         height: auto;
