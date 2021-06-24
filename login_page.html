@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login_page.css">
+    <title>Login to Food 24/7</title>
+    <!-- ------------------Google Fonts----------------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<!-- -------------------------------------- -->
+<link rel="stylesheet" href="login_page.css">
 </head>
-<body onload="showClock()">
-    <h2>Wellcome to my project!!</h2>
+<body onload=showClock()>    
+    <header>
+    <div class="navbar-1">
+        <div class="logo-contant">
+        <a href="index.html"><img src="source/logo.navbar.png" class="logo-1"></a>
+        <a href="index.html">
+            <h1 class="nav-h1">Food 24/7</h1>
+            <sub><p>Since 1994</p></sub>
+        </a>
+        <div class="clock"> 
+            <h2 id="watch"> CLOCK</h2>
+        </div>
+        </div>
+        <ul class="ul-1">
+            <a href="index.html"><li  class="li-1"> Home </li></a> 
+            <a href="#about"><li  class="li-1"> About </li></a> 
+            <a href="#service"><li  class="li-1"> Service </li></a> 
+            <a href="#menu"><li  class="li-1"> Menu </li></a> 
+            <a href="#footer"><li  class="li-1"> Contact</li></a> 
+            <a href="#"><li  class="li-1"> Sign up </li></a> 
+        </ul>
+    </div>
+
+    </header>
+    <main>
         <div class="container">
             <form class="form" id="form" >
                 <h1>Register now</h1>
     
-                <div class="watch" id="watch"> </div>
+                <!-- <div class="watch" id="watch"> </div> -->
     
                 <div class="form-control">
                     <label for="username">User Name : </label>
@@ -31,7 +58,6 @@
                     <small>Invalid number</small>
                 </div>
     
-    
                 <div class="form-control">
                     <label for="address">Address : </label>
                     <input type="text" id="address" placeholder="Enter address" > <br>
@@ -39,12 +65,16 @@
                 </div>
     
     
-                <div class="form-control">
-                    <label for="gender">Gender : </label>
-                    <li> <input type="radio" name="gender" value="male"> Male </li> 
-                    <li> <input type="radio" name="gender" value="female"> Female  </li>
-                    <li> <input type="radio" name="gender" value="female"> Others </li>
-                    <small>Unknown gender</small>
+                <div class="form-control" id="form-control-gender">
+                    <label class="gender" for="gender">Gender : 
+                        <sub>
+                            <li> <input type="radio" name="gender" value="male"> Male </li> 
+                            <li> <input type="radio" name="gender" value="female"> Female  </li>
+                            <li> <input type="radio" name="gender" value="female"> Others </li>
+                        </sub>
+                    </label>
+                   
+                    <!-- <small>Unknown gender</small> -->
                 </div>
     
      <!-- =======================================-======= -->
@@ -64,15 +94,44 @@
                     <input type="file" id="file" class="input-file">
                 </div>
                 
-                <button type="submit">Submit</button>
-    
-                <footer>
-                    <h3>Designed & developed by <br> <small> &rArr; © Shab Uddin Rayhan &lArr; </small</h3>
-                </footer>    
+                <button type="submit">Create Account</button>  
             </form>        
         </div>
-    
-    
+    </main>
+        <footer>
+            <div class="footer" id="footer">
+                <div class="contact-us">
+                    <div class="row">
+                        <div class="col-41">
+                            <ul>Download our app and<br>connect with latest features!  </ul>
+                                <a href=""><li><img src="https://w.bikroy-st.com/dist/img/all/app/android-a9c12585.png "></li></a>
+                                <a href=""><li><img src="https://w.bikroy-st.com/dist/img/all/app/ios-f93749bf.png"></li></a>
+                        </div>
+                        <div class="col-42">
+                            <ul> Our Address </ul>
+                                <p>Pahartali DT Road, Jhorna Para 341/06/A <br> Chittagong</p>
+                        </div>
+                        <div class="col-43">
+                            <ul>Help & Support</ul>
+                            <a href="#"><li>FAQ</li></a>
+                            <a href="#"><li>Membership</li></a>
+                            <a href="#"><li>Doorstep Delivery</li></a>
+                            <a href="#"><li>Offers</li></a>
+                            <a href="#"><li>Stay Safe</li></a>
+                        </div>
+                        <div class="col-44">                   
+                            <ul>Social </ul>
+                                <a href="#"><li>Facebook</li></a>
+                                <a href="#"><li>Instagram</li></a>
+                                <a href="#"><li>Twitter</li></a>
+                                <a href="#"><li>Linkedin</li></a>
+                                <a href="#"><li>Youtube</li></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright"> © Shab Uddin Rayhan- All rights reserved</div>
+            </div>
+        </footer>
     <script src="login_page.js"></script>
-    </body>
+</body>
 </html>
