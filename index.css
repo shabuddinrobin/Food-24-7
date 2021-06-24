@@ -8,6 +8,7 @@ html {
   }
 body{
     background: radial-gradient(#3783ae54, transparent);
+    overflow-x: hidden;
 }
 .btn{
     margin: 60px auto;
@@ -37,11 +38,7 @@ body{
     border-radius: 30px;
     padding-top: 5x;
     width: 100%;
-    height: auto;
     background-color: rgb(219, 190, 253);
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 17px;
 }
 header{
     position: fixed;
@@ -49,8 +46,9 @@ header{
     overflow: hidden;
     z-index: 1;
 }
+
 /* -----------------------ONGOING------------------- */
-header .ongoing{
+ header .ongoing{
     color: #d90000;
     font-weight: bold;
     font-size: 20px;
@@ -79,8 +77,10 @@ header .ongoing{
 .logo-contant{
     display: flex;
     width: 100%;
+    height: 90px;
 }
 .navbar-1 a .logo-1{
+    margin: auto;
     width: 50px;
     margin-left: 120px;
     border-radius: 20px;
@@ -100,10 +100,9 @@ header .ongoing{
 }
 .navbar-1 sub p{
     color: rgb(0 102 7);
-    margin-top: 0px;
+    margin-top: -5px;
     text-align: end;
     font-size: 19px;
-    margin-right: 0px;
     animation: navbar-1-sub 3s 3s both;
 }
 @keyframes navbar-1-sub{
@@ -112,21 +111,19 @@ header .ongoing{
         transform: translateY(-100px);
     }
 }
-.ul-1{
-    margin-top: 5px;
-    padding: 5px 0px 12px 0px;
+.ul-1 {
+    padding: 5px 0px 7px 0px;
     display: flex;
     list-style: none;
 }
-.ul-1 a{
+.ul-1 li{
     font-family: 'Abril Fatface', cursive;
     color: rgb(0, 160, 160);
     text-decoration: none;
 }
-.ul-1 a:hover{
+.ul-1 li:hover{
     color: rgb(238, 1, 33);
     filter: drop-shadow(7px 7px 17px);
-
     transition: .5s;
 }
 /* ----------------------Home----------------- */
@@ -624,7 +621,7 @@ header .ongoing{
 }
 footer{
     width: 100%;
-    height: 180px;
+    height: 171px;
     background-color: rgb(181, 209, 193);
     justify-content: space-between;
     border-radius: 25px;
@@ -640,11 +637,6 @@ footer{
         transform: 0;
     }
 }
-footer li{
-    list-style-type: none;
-    font-size: 13px;
-    text-align: center;
-}
 footer ul{
     text-align: center;
     margin: 8px 0px 12px 0px;
@@ -653,7 +645,13 @@ footer ul{
 }
 footer a{
     text-decoration: none;
+}
+footer li{
+    list-style-type: none;
+    font-size: 13px;
+    text-align: center;
     color: rgb(110, 35, 0);
+
 }
 footer p{
     text-align: center;
