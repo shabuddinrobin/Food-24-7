@@ -402,14 +402,13 @@ sub {
         margin-right: -70px;
     }
     .container {
-        padding-top: 110px;
+        padding-top: 150px;
     }
     .container form{
         padding: 10px;
         width: 95%;
         border: 2px dashed;
         margin: 20px auto;
-        /* justify-content: center */
     }
     footer {
         height: auto;
