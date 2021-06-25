@@ -234,6 +234,7 @@ header{
     margin-top: 100px;
     width: 90%;
     border-radius: 25px;
+    filter: drop-shadow(5px 6px 6px #000);
     animation: about-right-img 1s;
 }
 @keyframes about-right-img{
@@ -416,13 +417,13 @@ header{
     color: black;
     font-style: italic;
 }
-.menu .fa-cart-arrow-down{
-   font-size: 35px;
+.menu .fa-cart-arrow-down {
+    font-size: 35px;
     color: #d90000;
     margin-left: 160px;
 }
  .menu .fa-cart-arrow-down:hover{
-    color: #ff0404;
+    color: #fd0000;
 }
 .menu h4{
     font-family: 'Courgette', cursive;
