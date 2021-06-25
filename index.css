@@ -416,10 +416,10 @@ header{
     color: black;
     font-style: italic;
 }
-.menu .fa-cart-arrow-down:before {
-    content: "\f218";
-    font-size: 35px;
+.menu .fa-cart-arrow-down{
+   font-size: 35px;
     color: #d90000;
+    margin-left: 160px;
 }
  .menu .fa-cart-arrow-down:hover{
     color: #ff0404;
