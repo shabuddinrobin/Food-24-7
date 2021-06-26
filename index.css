@@ -620,6 +620,11 @@ header{
         opacity: 0%;
     }
 }
+
+
+/* --------------------------------Footer Section----------------------------- */
+
+
 footer{
     width: 100%;
     height: 171px;
@@ -683,9 +688,11 @@ footer .copyright{
     }
 }
 
+/* --------------------------------Footer Section Ends----------------------------- */
 
 
-/* ------------------------------------------------------- */
+/* ------------------------Media Section------------------------------ */
+
 
 @media (min-width: 600px) and (max-width: 800px){
     .navbar-1{ 
@@ -805,9 +812,7 @@ footer .copyright{
         text-align: center;
     }
 }
-
 /* ---------------------------------------- */
-
 @media (min-width: 400px) and (max-width: 599px) {
     .ongoing{
         display: none;
@@ -949,6 +954,7 @@ footer .copyright{
     }
     
 }
+/* ---------------------------------------- */
 @media (min-width: 150px) and (max-width: 400px) {
     .ongoing{
         display: none;
@@ -1114,3 +1120,6 @@ footer .copyright {
     animation: none;
 }
 }
+
+
+/* ------------------------Media Section Ends----------------------------- */
