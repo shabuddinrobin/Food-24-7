@@ -62,6 +62,7 @@ header{
     filter: drop-shadow(2px 2px 5px #000);
 }
 .nav-h1 {
+    margin-top: -7px;
     color: rgb(226, 43, 67);
     font-size: 65px;
     font-family: 'Merriweather', serif;
