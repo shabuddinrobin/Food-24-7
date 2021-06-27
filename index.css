@@ -131,6 +131,9 @@ header{
     width: 80%;
     padding-top: 90px;
 }
+.container-1 a{
+    text-decoration: none;
+}
 .container-1 .home{
     margin-top: 80px;
 }
@@ -818,7 +821,7 @@ footer .copyright{
         display: none;
     }
     .navbar-1{ 
-        height: 115px;
+        height: 126px;
         background-color: rgb(219, 190, 253);
         font-size: 17px;
     }
