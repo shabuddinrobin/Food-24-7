@@ -4,136 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to Food 24/7</title>
-    <!-- ------------------Google Fonts----------------------------->
+    <title>Document</title>
+        <!-- ------------------Google Fonts----------------------------->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 <!-- -------------------------------------- -->
-<link rel="stylesheet" href="sign_up.css">
+    <link rel="stylesheet" href="Sign_in.css">
 </head>
-<body onload=showClock()>    
-    
-    <header>
-        <div class="navbar-1">
-            <div class="logo-contant">
-            <a href=""><img src="source/logo.navbar.png" class="logo-1"></a>
-            <a href="">
-                <h1 class="nav-h1">Food 24/7</h1>
-                <sub><p>Since 1994</p></sub>
-            </a>
-            <div class="clock"> 
-                <h2 id="watch"> CLOCK</h2>
-            </div>
-            </div>
-            <ul class="ul-1">
-                <a href="index.html"><li  class="li-1"> Home </li></a> 
-                <a href="index.html"><li  class="li-1"> About </li></a> 
-                <a href="index.html"><li  class="li-1"> Service </li></a> 
-                <a href="index.html"><li  class="li-1"> Menu </li></a> 
-                <a href="#footer"><li  class="li-1"> Contact</li></a> 
-                <a href="Sign_in.html"><li  class="li-1"> Sign in </li></a> 
-            </ul>
-        </div>
-</header>
+<body onload=showClock()>
 
+    <header>
+                <div class="navbar-1">
+                    <div class="logo-contant">
+                    <a href=""><img src="source/logo.navbar.png" class="logo-1"></a>
+                    <a href="">
+                        <h1 class="nav-h1">Food 24/7</h1>
+                        <sub><p>Since 1994</p></sub>
+                    </a>
+                    <div class="clock"> 
+                        <h2 id="watch"> CLOCK</h2>
+                    </div>
+                    </div>
+                    <ul class="ul-1">
+                        <a href="index.html"><li  class="li-1"> Home </li></a> 
+                        <a href="index.html "><li  class="li-1"> About </li></a> 
+                        <a href="index.html"><li  class="li-1"> Service </li></a> 
+                        <a href="#form"><li  class="li-1">Login Form </li></a> 
+                        <a href="#footer"><li  class="li-1"> Contact</li></a> 
+                        <a href="sign_up.html"><li  class="li-1"> Sign up </li></a> 
+                    </ul>
+                </div>
+    </header>
 
     <main>
         <div class="container">
             <form class="form" id="form" >
-                <h1>Register now</h1>
-    
-                <!-- <div class="watch" id="watch"> </div> -->
-    
+                <h1>Welcome!</h1>
+                <h2>Sign in or sign up to continue</h2>
+        
                 <div class="form-control">
-                    <label for="username">User Name : </label>
-                    <input type="text" id="username" placeholder="Enter username" > <br>
-                    <small> Invalid username</small>
-                </div>
-                <div class="form-control">
-                    <label for="email">Email : </label>
+                    <label for="email">User Email : </label>
                     <input type="email" id="email" placeholder="Enter email" > <br>
                     <small>Invalid email</small>
                 </div>
-                <div class="form-control">
-                    <label for="phone">Phone : </label>
-                    <input type="number" id="phone" placeholder="Enter phone number" > <br>
-                    <small>Invalid number</small>
-                </div>
+               
     
-                <div class="form-control">
-                    <label for="address">Address : </label>
-                    <input type="text" id="address" placeholder="Enter address" > <br>
-                    <small>Invalid address</small>
-                </div>
-    
-    
-                <div class="form-control" id="form-control-gender">
-                    <label class="gender" for="gender">Gender : 
-                        <sub>
-                            <li> <input type="radio" name="gender" value="male"> Male </li> 
-                            <li> <input type="radio" name="gender" value="female"> Female  </li>
-                            <li> <input type="radio" name="gender" value="female"> Others </li>
-                        </sub>
-                    </label>
-                   
-                    <!-- <small>Unknown gender</small> -->
-                </div>
-    
-     <!-- =======================================-======= -->
+                
                 <div class="form-control">
                     <label for="password">Password : </label>
                     <input type="password" id="pass1" placeholder="Enter password" > <br>
                     <small id="small1">Invalid password</small>
                 </div>
-                <div class="form-control">
-                    <label for="password2">Confirm Password : </label> 
-                    <input type="password" id="pass2" placeholder="Enter password again"><br>
-                    <small id="small2">Password mismatched</small>
-                </div>
-    
-                <div>
-                    <h5>Upload your CV</h5>
-                    <input type="file" id="file" class="input-file">
-                </div>
-                
-                <button type="submit">Create Account</button>  
+
+                <button type="submit">Sign in</button>  
+                <p>Don't have an account? <a href="sign_up.html">Sign up</a> now</p>
             </form>        
         </div>
     </main>
-        <footer>
-            <div class="footer" id="footer">
-                <div class="contact-us">
-                    <div class="row">
-                        <div class="col-41">
-                            <ul>Download our app and<br>connect with latest features!  </ul>
-                                <a href=""><li><img src="https://w.bikroy-st.com/dist/img/all/app/android-a9c12585.png "></li></a>
-                                <a href=""><li><img src="https://w.bikroy-st.com/dist/img/all/app/ios-f93749bf.png"></li></a>
-                        </div>
-                        <div class="col-42">
-                            <ul> Our Address </ul>
-                                <p>Pahartali DT Road, Jhorna Para 341/06/A <br> Chittagong</p>
-                        </div>
-                        <div class="col-43">
-                            <ul>Help & Support</ul>
-                            <a href="#"><li>FAQ</li></a>
-                            <a href="#"><li>Membership</li></a>
-                            <a href="#"><li>Doorstep Delivery</li></a>
-                            <a href="#"><li>Offers</li></a>
-                            <a href="#"><li>Stay Safe</li></a>
-                        </div>
-                        <div class="col-44">                   
-                            <ul>Social </ul>
-                                <a href="#"><li>Facebook</li></a>
-                                <a href="#"><li>Instagram</li></a>
-                                <a href="#"><li>Twitter</li></a>
-                                <a href="#"><li>Linkedin</li></a>
-                                <a href="#"><li>Youtube</li></a>
-                        </div>
+
+    <footer>
+        <div class="footer" id="footer">
+            <div class="contact-us">
+                <div class="row">
+                    <div class="col-41">
+                        <ul>Download our app and<br>connect with latest features!  </ul>
+                            <a href=""><li><img src="https://w.bikroy-st.com/dist/img/all/app/android-a9c12585.png "></li></a>
+                            <a href=""><li><img src="https://w.bikroy-st.com/dist/img/all/app/ios-f93749bf.png"></li></a>
+                    </div>
+                    <div class="col-42">
+                        <ul> Our Address </ul>
+                            <p>Pahartali DT Road, Jhorna Para 341/06/A <br> Chittagong</p><br>
+                            <p>Phone: +8801912-909442</p>
+                    </div>
+                    <div class="col-43">
+                        <ul>Help & Support</ul>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Membership</li></a>
+                        <a href="#"><li>Doorstep Delivery</li></a>
+                        <a href="login_page.html"><li>Log in</li></a>
+                        <a href="login_page.html"><li>Sign up</li></a>
+                    </div>
+                    <div class="col-44">                   
+                        <ul>Social </ul>
+                            <a href="#"><li>Facebook</li></a>
+                            <a href="#"><li>Instagram</li></a>
+                            <a href="#"><li>Twitter</li></a>
+                            <a href="#"><li>Linkedin</li></a>
+                            <a href="#"><li>Youtube</li></a>
                     </div>
                 </div>
-                <div class="copyright"> © Shab Uddin Rayhan- All rights reserved</div>
             </div>
-        </footer>
-    <script src="sign_up.js"></script>
+            <div class="copyright"> © Shab Uddin Rayhan- All rights reserved</div>
+        </div>
+    </footer>
+
+<script src="Sign_in.js"></script>
 </body>
 </html>
