@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to Food 24/7</title>
+    <title>Sign up | Food 24/7</title>
     <!-- ------------------Google Fonts----------------------------->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
     <header>
         <div class="navbar-1">
             <div class="logo-contant">
-            <a href=""><img src="source/logo.navbar.png" class="logo-1"></a>
-            <a href="">
+            <a href="index.html"><img src="source/logo.navbar.png" class="logo-1"></a>
+            <a href="index.html">
                 <h1 class="nav-h1">Food 24/7</h1>
                 <sub><p>Since 1994</p></sub>
             </a>
@@ -29,21 +29,17 @@
                 <a href="index.html"><li  class="li-1"> Home </li></a> 
                 <a href="index.html"><li  class="li-1"> About </li></a> 
                 <a href="index.html"><li  class="li-1"> Service </li></a> 
-                <a href="index.html"><li  class="li-1"> Menu </li></a> 
+                <a href="#form"><li  class="li-1"> Register Form </li></a> 
                 <a href="#footer"><li  class="li-1"> Contact</li></a> 
                 <a href="Sign_in.html"><li  class="li-1"> Sign in </li></a> 
             </ul>
         </div>
 </header>
 
-
     <main>
         <div class="container">
             <form class="form" id="form" >
                 <h1>Sign up now</h1>
-    
-                <!-- <div class="watch" id="watch"> </div> -->
-    
                 <div class="form-control">
                     <label for="username">User Name : </label>
                     <input type="text" id="username" placeholder="Enter username" > <br>
@@ -59,14 +55,11 @@
                     <input type="number" id="phone" placeholder="Enter phone number" > <br>
                     <small>Invalid number</small>
                 </div>
-    
                 <div class="form-control">
                     <label for="address">Address : </label>
                     <input type="text" id="address" placeholder="Enter address" > <br>
                     <small>Invalid address</small>
                 </div>
-    
-    
                 <div class="form-control" id="form-control-gender">
                     <label class="gender" for="gender">Gender : 
                         <sub>
@@ -75,28 +68,23 @@
                             <li> <input type="radio" name="gender" value="female"> Others </li>
                         </sub>
                     </label>
-                   
-                    <!-- <small>Unknown gender</small> -->
-                </div>
-    
-     <!-- =======================================-======= -->
+                </div>   
                 <div class="form-control">
                     <label for="password">Password : </label>
                     <input type="password" id="pass1" placeholder="Enter password" > <br>
                     <small id="small1">Invalid password</small>
                 </div>
-                <div class="form-control">
+                <div class="form-control pass-2">
                     <label for="password2">Confirm Password : </label> 
                     <input type="password" id="pass2" placeholder="Enter password again"><br>
                     <small id="small2">Password mismatched</small>
                 </div>
-    
                 <div>
                     <h5>Upload your Biodata</h5>
                     <input type="file" id="file" class="input-file">
                 </div>
-                
-                <button type="submit">Create Account</button>  
+                <button type="submit">Sign up</button>  
+                <h2>Already have an accout? please <a href="Sign_in.html">Sign in</a></h2>
             </form>        
         </div>
     </main>
