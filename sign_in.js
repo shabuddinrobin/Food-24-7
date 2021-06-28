@@ -40,7 +40,7 @@ form.addEventListener('submit', function(e){
                 showError(password, "Need 8 characters")
             }
             else if(password.value.length >= 9){
-                showError(password, "Need 8 characters only")
+                showError(password, "Only 8 characters indeed")
             }
                 else{
                     showSuccess(password);
