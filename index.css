@@ -452,80 +452,11 @@ header{
     background: radial-gradient(#7b7645, transparent);
     display: grid;
     text-align: center;
-    animation: cart-21 1.5s .5s both;
-
 }
 .menu .cart-21:hover{
     transform: translateY(-10px);
     background: radial-gradient(#968e56, transparent);
 
-}
-@keyframes cart-21{
-    0%{
-        opacity: 0%;
-        transform: translateX(-800px);
-    }
-}
-.menu .cart-22{
-    width: 230px;
-    height: 420px;
-    margin: 50px 10px;
-    padding: 10px 5px;
-    border-radius: 12px;
-    background: radial-gradient(#7b7645, transparent);
-    display: grid;
-    text-align: center;
-    animation: cart-22 2s .5s both;
-}
-.menu .cart-22:hover{
-    background: radial-gradient(#968e56, transparent);
-    transform: translateY(-10px);
-}
-@keyframes cart-22{
-    0%{
-        opacity: 0%;
-    }
-}
-.menu .cart-23{
-    width: 230px;
-    height: 420px;
-    margin: 50px 10px;
-    padding: 10px 5px;
-    border-radius: 12px;
-    background: radial-gradient(#7b7645, transparent);
-    display: grid;
-    text-align: center;
-    animation: cart-23 2s .5s both;
-}
-.menu .cart-23:hover{
-    background: radial-gradient(#968e56, transparent);
-    transform: translateY(-10px);
-}
-@keyframes cart-23{
-    0%{
-        opacity: 0%;
-    }
-}
-.menu .cart-24{
-    width: 230px;
-    height: 420px;
-    margin: 50px 10px;
-    padding: 10px 5px;
-    border-radius: 12px;
-    background: radial-gradient(#7b7645, transparent);
-    display: grid;
-    text-align: center;
-    animation: cart-24 1.5s .5s both;
-}
-.menu .cart-24:hover{
-    background: radial-gradient(#968e56, transparent);
-    transform: translateY(-10px);
-}
-@keyframes cart-24{
-    0%{
-        opacity: 0%;
-        transform: translateX(800px);
-    }
 }
 .container-1 .menu .btn{
     background-color: rgb(66, 197, 199); 
